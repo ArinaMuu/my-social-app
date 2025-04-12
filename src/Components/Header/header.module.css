@@ -1,0 +1,8 @@
+.header {
+    grid-area: h;
+    background-color: bisque;
+}
+
+.loginBlock {
+    float: right;
+}

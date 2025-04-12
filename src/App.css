@@ -1,0 +1,14 @@
+.app-container {
+    display: grid;
+    grid-template-areas:
+    "h h"
+    "n p";
+    grid-template-columns: 2fr 10fr;
+    grid-template-rows: 100px 1fr;
+    grid-gap: 10px;
+}
+
+.app-container-content {
+    grid-area: p;
+    background-color: rebeccapurple;
+}
