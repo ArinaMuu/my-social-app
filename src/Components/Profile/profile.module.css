@@ -1,3 +1,16 @@
 .userPhoto {
     width: 200px;
 }
+
+.selected {
+    font-weight: bold;
+}
+
+.page {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+button {
+    margin: 5px;
+}

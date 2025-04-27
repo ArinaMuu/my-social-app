@@ -19,7 +19,7 @@ let LoginForm = (props) => {
                 <Field type={'checkbox'} name={'rememberMe'} component={Input}/>Remember me
             </div>
             {props.captchaUrl && <img src={props.captchaUrl}/>}
-            {props.captchaUrl && createField ("Symbols from image", "captcha", [required], Input, {})}
+            {props.captchaUrl && createField ("Symbols from image", "captcha", [required], Input)}
             {props.error && <div className={s.formSummaryError}>
                 {props.error}
             </div>}

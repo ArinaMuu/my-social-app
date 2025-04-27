@@ -3,11 +3,11 @@ import {NavLink} from "react-router-dom";
 import Paginator from "../common/Paginator/paginator";
 
 let Users = ({totalItemsCount, pageSize, currentPage, onPageChanged, users, ...props}) => {
-    <Paginator totalItemsCount={totalItemsCount} pageSize={pageSize} currentPage={currentPage} onPageChanged={onPageChanged}/>
-
     return (
         <div>
-            {props.users?.map(u => <div key={u.id}>
+            <Paginator totalItemsCount={totalItemsCount} pageSize={pageSize}
+                       currentPage={currentPage} onPageChanged={onPageChanged}/>
+            {users?.map(u => <div key={u.id}>
                 <div>
                     <NavLink to={'/profile/' + u.id}>
                         <img
